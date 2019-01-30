@@ -3,7 +3,7 @@
 ![](http://progressed.io/bar/100?title=Progress)
 
 ## Connect to server via
-######(This instance may not be usable, and should be used a reference only.)
+###### (This instance may not be usable, and should be used a reference only.)
 
 IP address : 52.15.171.191
 
