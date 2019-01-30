@@ -1,5 +1,7 @@
 # Udacity Linux Server Configuration Project
 
+![](http://progressed.io/bar/100?title=Progress)
+
 ## Connect to server via
 ######(This instance may not be usable, and should be used a reference only.)
 
@@ -241,7 +243,7 @@ Run `sudo service apache2 restart` and check `http://52.15.171.191/`
 
 ## Sources
 
-[SSH: How to Access a Remote Server and Edit Files](https://www.youtube.com/watch?v=HcwK8IWc-a8)
-[mod_wsgi (Apache)](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/)
-[SSH Essentials](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
-[Apache Web Server on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-16-04)
+* [SSH: How to Access a Remote Server and Edit Files](https://www.youtube.com/watch?v=HcwK8IWc-a8)
+* [mod_wsgi (Apache)](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/)
+* [SSH Essentials](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
+* [Apache Web Server on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-16-04)
