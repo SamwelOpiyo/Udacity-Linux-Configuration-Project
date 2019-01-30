@@ -1,5 +1,13 @@
 # Udacity Linux Server Configuration Project
 
+## Connect to grader via
+
+Download lightsail_key.rsa
+
+ssh -p 2200 grader@52.15.171.191 -i `<path to lightsail_key.rsa file>`
+
+password is grader
+
 ![](http://progressed.io/bar/100?title=Progress)
 
 ## Connect to server via
