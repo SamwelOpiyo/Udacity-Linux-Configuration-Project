@@ -1,6 +1,7 @@
 # Udacity Linux Server Configuration Project
 
 ## Connect to server via
+######(This instance may not be usable, and should be used a reference only.)
 
 IP address : 52.15.171.191
 
@@ -8,7 +9,7 @@ SSH port : 2200
 
 * ec2-Your Public IP address with (**-**) .us-(your coast)-(a number).compute.amazonaws.com
 EC2 URL : http://ec2-52-15-171-191.us-east-2.compute.amazonaws.com/
-(This instance may not be usable, and should be used a reference only.)
+
 
 ## Configuration steps 
 ### 1. Create an instance in AWS Lightsail 
@@ -187,7 +188,7 @@ Paste the following code
 ```
 <VirtualHost *:80>
     ServerName 52.15.171.191
-    ServerAdmin admin@Public-IP-Address
+    ServerAdmin ortiv@programmer.net
     WSGIScriptAlias / /var/www/catalog/Foodie-Catalog/catalog.wsgi
     <Directory /var/www/catalog/Foodie-Catalog/>
         Order allow,deny
@@ -237,3 +238,10 @@ Set up the DB with `python /var/www/catalog/item-catalog-udacity/database_setup.
 ### 14. Restart Apache 
 
 Run `sudo service apache2 restart` and check `http://52.15.171.191/`
+
+## Sources
+
+[SSH: How to Access a Remote Server and Edit Files](https://www.youtube.com/watch?v=HcwK8IWc-a8)
+[mod_wsgi (Apache)](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/)
+[SSH Essentials](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
+[Apache Web Server on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-16-04)
