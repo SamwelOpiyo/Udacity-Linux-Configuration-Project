@@ -6,7 +6,8 @@ IP address : 52.15.171.191
 
 SSH port : 2200
 
-EC2 URL : http://ec2-52-15-171-191.us-east-2a.compute.amazonaws.com/
+* ec2-Your Public IP address with (**-**) .us-(your coast)-(a number).compute.amazonaws.com
+EC2 URL : http://ec2-52-15-171-191.us-east-2.compute.amazonaws.com/
 (This instance may not be usable, and should be used a reference only.)
 
 ## Configuration steps 
