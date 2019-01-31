@@ -6,7 +6,7 @@ Download id_rsa.pub
 
 ssh -p 2200 grader@18.191.34.180 -i `<path to id_rsa.pub file>`
 
-password is grader
+The passphrase is `grader`
 
 ![](http://progressed.io/bar/100?title=Progress)
 
