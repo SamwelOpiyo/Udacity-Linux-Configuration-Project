@@ -2,9 +2,9 @@
 
 ## Connect to grader via
 
-Download lightsail_key.rsa
+Download id_rsa.pub
 
-ssh -p 2200 grader@52.15.171.191 -i `<path to lightsail_key.rsa file>`
+ssh -p 2200 grader@18.191.34.180 -i `<path to id_rsa.pub file>`
 
 password is grader
 
@@ -18,7 +18,7 @@ IP address : 52.15.171.191
 SSH port : 2200
 
 * ec2-Your Public IP address with (**-**) .us-(your coast)-(a number).compute.amazonaws.com
-EC2 URL : http://ec2-52-15-171-191.us-east-2.compute.amazonaws.com/
+EC2 URL : http://ec2-18-191-34-180.us-east-2.compute.amazonaws.com/Foodie-Catalog/
 
 
 ## Configuration steps 
