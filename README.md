@@ -13,7 +13,7 @@ The passphrase is `grader`
 ## Connect to server via
 ###### (This instance may not be usable, and should be used a reference only.)
 
-IP address : 52.15.171.191
+IP address : 18.191.34.180
 
 SSH port : 2200
 
@@ -44,9 +44,9 @@ Navigate to the directory where your file is stored in your terminal (e.g.`Users
 
 Run `chmod 600 LightsailDefaultKey-*.pem` to restrict  file permissions. 
 
-Change name to `lightsail_key.rsa`.
+Change name to `id_rsa`.
 
-Run a command `ssh -i lightsail_key.rsa ubuntu@52.15.171.191` in your local terminal.
+Run a command `ssh -i id_rsa ubuntu@18.191.34.180` in your local terminal.
 
 ### 3. Change SSH port 22, to 2200
 
@@ -197,7 +197,7 @@ Create an  Apache config file `sudo nano /etc/apache2/sites-available/catalog.co
 Paste the following code
 ```
 <VirtualHost *:80>
-    ServerName 52.15.171.191
+    ServerName 18.191.34.180
     ServerAdmin ortiv@programmer.net
     WSGIScriptAlias / /var/www/catalog/Foodie-Catalog/catalog.wsgi
     <Directory /var/www/catalog/Foodie-Catalog/>
@@ -247,7 +247,7 @@ Set up the DB with `python /var/www/catalog/item-catalog-udacity/database_setup.
 
 ### 14. Restart Apache 
 
-Run `sudo service apache2 restart` and check `http://52.15.171.191/`
+Run `sudo service apache2 restart` and check `http://18.191.34.180`
 
 ## Sources
 
