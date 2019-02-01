@@ -2,7 +2,7 @@
 
 ## Connect to grader via
 
-Download id_rsa.pub
+Download id_rsa
 
 ssh -p 2200 grader@18.191.34.180 -i `<path to id_rsa.pub file>`
 
