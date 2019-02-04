@@ -17,8 +17,7 @@ IP address : 18.191.34.180
 
 SSH port : 2200
 
-* ec2-Your Public IP address with (**-**) .us-(your coast)-(a number).compute.amazonaws.com
-EC2 URL : http://ec2-18-191-34-180.us-east-2.compute.amazonaws.com/Foodie-Catalog/
+* Server address: http://18.191.34.180.xip.io/
 
 
 ## Configuration steps 
