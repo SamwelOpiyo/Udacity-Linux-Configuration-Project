@@ -1,5 +1,9 @@
 # Udacity Linux Server Configuration Project
 
+## Connect to server
+
+Server address: http://18.191.34.180.xip.io/
+
 ## Connect to grader via
 
 Download id_rsa
@@ -16,9 +20,6 @@ The passphrase is `grader`
 IP address : 18.191.34.180
 
 SSH port : 2200
-
-* Server address: http://18.191.34.180.xip.io/
-
 
 ## Configuration steps 
 ### 1. Create an instance in AWS Lightsail 
