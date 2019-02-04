@@ -148,6 +148,8 @@ Switch to the `catalog` directory and clone the Catalog project (e.g `cd /var/ww
 
 `cd catalog` and `git clone https://github.com/oinga/Foodie-Catalog.git`
 
+Switch to the cloned repository ie `cd Foodie-Catalog/`
+
 Add `catalog.wsgi` file.
 
 Run `sudo nano catalog.wsgi` and add the following code.
@@ -156,10 +158,10 @@ Run `sudo nano catalog.wsgi` and add the following code.
 import sys
 import logging
 logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0, `/var/www/catalog/Foodie-Catalog`)
+sys.path.insert(0, "/var/www/catalog/Foodie-Catalog")
 
 from Foodie-Catalog import app as application
-application.secret_key = `secret`
+application.secret_key = "secret"
 ```
 
 Modify filenames to deploy on AWS.
@@ -176,12 +178,9 @@ Create a new virtual environment with `sudo virtualenv venv` and activate it `so
 
 Change permissions to the virutual environment folder 
 
-Run `sudo chmod -R 777 venv`
+Run `sudo chmod -R 777 venv` 
 
-Install Flask 
-Run `pip install Flask` 
-
-Install program dependencies. `pip install bleach httplib2 request oauth2client sqlalchemy python-psycopg2.`
+Install Application dependencies. `pip install -r requirements.txt`
 
 ### 12. Configure Apache
 
@@ -232,9 +231,9 @@ Change a grand from public to catalog `GRANT ALL ON SCHEMA public TO catalog`
 
 Logout from postgress and return to the grader user ` \q` and `exit`
 
-Change the engine inside Flask application.
+Change the engine inside Flask application and Database Setup Script.
 
-`engine = create_engine(`postgresql://catalog:catalog@localhost/catalog`)`
+`engine = create_engine("postgresql://catalog:catalog@localhost:5432/catalog")`
 
 Set up the DB with `python /var/www/catalog/item-catalog-udacity/database_setup.py`
 
